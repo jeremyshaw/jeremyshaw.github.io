@@ -2,6 +2,7 @@
 
 * {
 	box-sizing:	border-box;
+	border-radius:	8px;	/* rounded corners */
 }
 
 body {
@@ -11,12 +12,14 @@ body {
 
 .header {
 	padding:	0px;
+	margin:		0px;
 	text-align:	center;
-	backbround:	white;
+	
 }
 .header h1 {
     color:	navy;
 	font-size:	50px;
+	margin:	0px;
 }
 
 
@@ -51,7 +54,6 @@ body {
 }
 
 .card {
-	border-radius:	8px;	/* rounded corners */
 	background-color:	#fff;
 	padding:	8px;
 	margin-top:	5px;
@@ -77,10 +79,10 @@ body {
 }
 
 .footer {
-	padding:	5px;
+	padding:	2px;
 	text-align:	center;
 	background: white;
-	margin-top:	10px;
+	margin-top:	5px;
 }
 
 .img {
