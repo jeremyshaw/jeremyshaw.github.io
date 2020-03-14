@@ -1,8 +1,83 @@
-body {
-    background-color: honeydew;
+/* Thanks w3schools for the template concepts and lessons */
+
+* {
+	box-sizing:	border-box;
 }
 
-h1 {
-    color: navy;
-    margin-left: 20px;
+body {
+    background-color: honeydew;
+	padding: 5px;
 }
+
+.header {
+	padding:	10px;
+	text-align:	center;
+	backbround:	white;
+}
+.header h1 {
+    color:	navy;
+	font-size:	50px;
+}
+
+.topnav {
+	overflow:	hidden;
+	background-color:	#333;
+}
+.topnav a {
+	float:	left;
+	display:	block;
+	color:	#f2f2f2;
+	text-align:	center;
+	padding: 14px 16px;
+	text-decoration:	none;
+}
+.topnav a: hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.leftcolumn {
+	float:	left;
+	width: 75%;
+}
+.rightcolumn {
+	float:	left;
+	width:	25%;
+	background-color:	honeydew;
+	padding-left:	10px;
+}
+
+.card {
+	background-color:	white;
+	padding:	10px;
+	margin-top:	10px;
+}
+
+.row:after {
+	content:	"";
+	display:	table;
+	clear:	both;
+}
+
+.footer {
+	padding:	5px;
+	text-align:	center;
+	background: white;
+	margin-top:	10px;
+}
+
+/*responsive 800px */
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width:	100%;
+		padding:	0;
+	}
+}
+/*responsive 400px */
+@media screen and (max-width: 400px) {
+	.topnav a {
+		float:	none;
+		width:	100%;
+	}
+}
+
