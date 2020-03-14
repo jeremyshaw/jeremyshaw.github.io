@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-	padding:	10px;
+	padding:	0px;
 	text-align:	center;
 	backbround:	white;
 }
@@ -30,6 +30,9 @@ body {
 	text-align:	center;
 	padding: 14px 16px;
 	text-decoration:	none;
+	/* No browser supports this at the moment, and likely never
+	target-name:	new;
+	target-new:	tab;	*/
 }
 .topnav a: hover {
 	background-color: #ddd;
@@ -64,6 +67,13 @@ body {
 	text-align:	center;
 	background: white;
 	margin-top:	10px;
+}
+
+.img {
+	max-width:	100%;
+	max-height:	100%;
+	height:	auto;
+	padding:	10px;
 }
 
 /*responsive 800px */
