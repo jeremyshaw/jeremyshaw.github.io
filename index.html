@@ -2,7 +2,14 @@
 
 <html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script>
+		var shiftWindow = function() { scrollBy(0, -50) };
+		if (location.hash) shiftWindow();
+		window.addEventListener("hashchange", shiftWindow);
+		<!--- thanks for this code, petersproblems @ wordpress! This keeps the sticky navbar from covering the anchor--->
+	</script>
 
     <head>
 
@@ -133,21 +140,6 @@
         <div class="footer">
 			<h3>© Jeremy Shaw 2020</h3>
 		</div>
-	<script>
-		window.onscroll = function() {myFunction()};
-
-		var navbar = document.getElementById("navbar");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-		  if (window.pageYOffset >= sticky) {
-			navbar.classList.add("sticky")
-		  } else {
-			navbar.classList.remove("sticky");
-		  }
-		}
-	</script>
-
 
     </body>
 
