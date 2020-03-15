@@ -6,8 +6,10 @@
 }
 
 body {
-    background-color: #009900;
-	padding: 5px;
+    /* background-color:	#009900; */
+	padding:	5px;
+	max-width:	900px;
+	margin:	auto;	/* this is what centers the content */
 }
 
 .header {
@@ -26,6 +28,9 @@ body {
 .topnav {
 	overflow:	hidden;
 	background-color:	#333;
+	position:	-webkit-sticky;	/* safari */
+	position:	sticky;
+	top:	0;
 }
 .topnav a {
 	float:	left;
@@ -34,9 +39,13 @@ body {
 	text-align:	center;
 	padding: 8px 16px;
 	text-decoration:	none;
+	border-right:	1px solid;
+	border-radius:	0;
 	/* No browser supports this at the moment, and likely never
 	target-name:	new;
 	target-new:	tab;	*/
+}.topnav a:last-child {
+	border-right:	0;
 }
 .topnav a:hover {
 	background-color: #ddd;
@@ -57,6 +66,9 @@ body {
 	background-color:	#fff;
 	padding:	8px;
 	margin-top:	5px;
+	margin-bottom:	5px;
+	border-color:	#00ff00;
+	border-style:	solid;
 }
 .card h2{
 	float:	left;
@@ -68,8 +80,16 @@ body {
 	margin-top: 0.2em;
 	margin-bottom:	0.2em;
 }
-.card p{
-
+.card-anchor {
+	background-color:	#fff;
+	padding:	8px;
+	margin-top:	5px;
+	border-color:	#333;
+	border-style:	solid;
+}
+.card-anchor h2{
+	margin-top:	0.2px;
+	margin-bottom:	0.2px;
 }
 
 /* these both seem to be overflow resolvers */
@@ -78,13 +98,12 @@ body {
 	display:	table;
 	clear:	both;
 }
+.card::after {	/* why does this one have double '::'? Look into this later */
+	content:	"";
+	display:	table;
+	clear:	both;
 
-.card::after {
-  content: "";
-  clear: both;
-  display: table;
 }
-
 
 .footer {
 	padding:	2px;
@@ -99,7 +118,6 @@ body {
 	padding:	5px;
 	float:	right;
 }
-
 
 /*responsive 800px */
 @media screen and (max-width: 800px) {

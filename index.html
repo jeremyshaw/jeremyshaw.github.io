@@ -33,21 +33,28 @@
 
     <body>
 	
+		
 		<div class = "header">
 			<h1>Jeremy Shaw</h1>
-			<p>Seeking HW/SW Engineering role, preferably in firmware and the thin interaction between hardware and software.</p>
-			<p>Welcome to my website. Work in progress.</p>
 		</div>
 		
 		<div class="topnav">
-			<a href="https://github.com/jeremyshaw/">Github Repos</a>
-			<a href="https://linkedin.com/in/jeremyshaw-one">Linkedin</a>
-			<a href="http://athena.ecs.csus.edu/~shawj/">CSUS</a>
+			<a href="#"><img style="height:	14px; border-radius: 0; padding: 0;" src="images/home.png"></a>
+			<a href="#projects">Projects</a>
+			<a href="#courses">Course History (WIP)</a>
+			<a href="" style="float:	right">Resume will be here later; WIP</a>
 		</div>
 		
 		<div class="row">
+		
 			<div class="leftcolumn">
+			
+				<div class="card">
+					Seeking HW/SW Engineering role, preferably in firmware and the thin interaction between hardware and software. <br> Welcome to my website. Work in progress.
+				</div>
 				
+				
+				<div class="card-anchor"><a id="projects"><h2>Projects</h2></div>
 				<div class="card">
 					<h2>JAWOS - <a href="https://github.com/jeremyshaw/JAWOS">Github</a></h2>
 					<h5>Fall 2019</h5>
@@ -70,21 +77,72 @@
 					<p>Designed and created a remote-controlled greenhouse. Mainly learned basics of project management, team dynamics, and the importance of documentation (in advance of actually needing it).</p>
 				</div>
 				
+				<div class="card-anchor"><a id="courses"><h2>Courses</h2></div>
+				<div class="card">
+					<h2>Current coureses @ CSUS</h2>
+					<h5>Spring 2020</h5>
+					<p><strong>CpE191 - Senior Design II</strong><br></p>
+					<p><strong>EEE196A - PCB Design</strong><br></p>
+				</div>
+				<div class="card">
+					<h2>Past semester @ CSUS</h2>
+					<h5>Fall 2019</h5>
+					<p><strong>CpE190 - Senior Design I</strong><br>Systems design, largely focused on finding a societal problem, proposing a solution, and the various design parameters necessary for a successful project</p>
+					<p><strong>EEE185 - Modern Communications Systems</strong><br>A fun mathmatical continuation of EEE180 and ENGR120</p>
+					<p><strong>CpE159 - Operating System Pragmatics</strong><br>OS implementation in C and x86 ASM, with some help from SPEDE libraries</p>
+					<p><strong>CpE151 - CMOS & VLSI</strong><br>Somewhat of a continuation of EEE108, largely focusing on digital logic implementation on basic silicon layers, and various desgin consideratins.</p>
+					<p><strong>CHIN120 - Chinese History</strong><br>Quite a fun class, largely condensing the massive timeline of Chinese history into various key inflection points.</p>
+				</div>
+				<div class="card">
+					<h2>Past semester @ CSUS</h2>
+					<h5>Spring 2019</h5>
+					<p><strong>CpE190 - Senior Design I</strong><br>Systems design, largely focused on finding a societal problem, proposing a solution, and the various design parameters necessary for a successful project</p>
+					<p><strong>EEE185 - Modern Communications Systems</strong><br>A fun mathmatical continuation of EEE180 and ENGR120</p>
+					<p><strong>CpE159 - Operating System Pragmatics</strong><br>OS implementation in C and x86 ASM, with some help from SPEDE libraries</p>
+					<p><strong>CpE151 - CMOS & VLSI</strong><br>Somewhat of a continuation of EEE108, largely focusing on digital logic implementation on basic silicon layers, and various desgin consideratins.</p>
+					<p><strong>CHIN120 - Chinese History</strong><br>Quite a fun class, largely condensing the massive timeline of Chinese history into various key inflection points.</p>
+				</div>
+				
 			</div>
+			
 			<div class="rightcolumn">
+			
 				<div class="card">
 					<h2>About Me</h2>
 					<h5><br></h5>	<!--- may be neccesary for the float to work with h2 --->
 					<p>(May 2020) B.S. Computer Engineering, California State University, Sacramento</p>
 					<p>Looking for engineering job.</p>
-					
+				</div>
+				
+				<div class="card">
+					<h2>External Links</h2>
+					<h5><br></h5>	<!--- may be neccesary for the float to work with h2 --->
+					<p><a href="https://github.com/jeremyshaw/">Github Repos</a></p>
+					<p><a href="https://linkedin.com/in/jeremyshaw-one">Linkedin</a></p>
+					<p><a href="http://athena.ecs.csus.edu/~shawj/">CSUS (student page)</a></p>
 				</div>
 			</div>
+			
 		</div>
 
         <div class="footer">
 			<h3>© Jeremy Shaw 2020</h3>
 		</div>
+	<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+	</script>
+
 
     </body>
 
